@@ -8,10 +8,10 @@ CREATE TABLE patients (
 );
 
 CREATE TABLE medical_histories (
-    id INT GENERATED ALWAYS AS IDENTITY,
+    id          INT GENERATED ALWAYS AS IDENTITY,
     admitted_at TIMESTAMP,
-    patient_id INT,
-    status VARCHAR(250),
+    patient_id  INT,
+    status      VARCHAR(250),
     PRIMARY KEY (id),
     CONSTRAINT patient_id_fkey FOREIGN KEY (patient_id) REFERENCES patients (id)
 );
@@ -24,4 +24,11 @@ CREATE TABLE invoices (
     medical_history__id INT,
     PRIMARY KEY (id),
     CONSTRAINT medical_history_fkey FOREIGN KEY (medical_history__id) REFERENCES medical_histories (id)
+);
+
+CREATE TABLE treatments (
+    id   INT GENERATED ALWAYS AS IDENTITY,
+    type VARCHAR(250),
+    name VARCHAR(250),
+    PRIMARY KEY (id)
 );
