@@ -210,9 +210,9 @@ Example:
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@flemton](https://github.com/flemton)
+- Twitter: [@oalhassan847](https://twitter.com/oalhassan847)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/newtongh)
 
 👤 **Author2**
 
@@ -268,15 +268,18 @@ I would like to thank...
 
 ## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
+- **[How do I use PostgreSQL in the terminal?]**
 
-- **[Question_1]**
+  - [After opening the PostgreSQL terminal (psql) you'll be asked for a server name to connect]
+  - [Press enter if you've not changed the server name (shows locahost)]
+  - [Next is database name, type vet_clinic and press enter if you've already created the vet_clinic database]
+  - [Next prompt is port, press enter]
+  - [Enter username, in the next or press enter if not sure]
+  - [Lastly enter your PostgreSQL user password when prompted and press enter]
 
-  - [Answer_1]
+- **[How do I switch a database?]**
 
-- **[Question_2]**
-
-  - [Answer_2]
+  - `\c [db-name]` where `[db-name]` is your database name, example `\c vet_clinic`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
